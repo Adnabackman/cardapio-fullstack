@@ -2,21 +2,18 @@ import axios, { type AxiosPromise } from "axios"
 import type { FoodData } from "../../interface/FoodData";
 import { useQuery } from "@tanstack/react-query";
 
-const API_URL = 'http://localhost:8080'; // backend Spring Boot
+const API_URL = 'http://localhost:5173/';
 
 const fetchData = async (): AxiosPromise<FoodData[]> => {
-    return axios.get(API_URL + '/food'); 
+    const response = axios.get(API_URL + '/food');
+    return response;
 }
 
-export function useFoodData() {
-    const query = useQuery({
+export function useFoodData(){
+    const query = useQuery ({
         queryFn: fetchData,
         queryKey: ['food-data'],
         retry: 2,
-    })
 
-    return {
-        ...query,
-        data: query.data?.data
-    }
+    })
 }

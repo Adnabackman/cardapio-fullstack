@@ -1,4 +1,3 @@
-# Local HELP / Maven wrapper
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -32,19 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-# Frontend - Node.js
-frontend/node_modules/
-frontend/dist/
-frontend/.env
-
-# Backend - Java / IntelliJ / Maven / Gradle
-backend/.idea/
-backend/target/
-backend/out/
-backend/.gradle/
-*.iml
-
-# Sistema
-*.log
-.DS_Store

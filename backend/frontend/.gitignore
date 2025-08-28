@@ -1,4 +1,29 @@
-# Local HELP / Maven wrapper
+<<<<<<< HEAD
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+=======
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -32,19 +57,4 @@ build/
 
 ### VS Code ###
 .vscode/
-
-# Frontend - Node.js
-frontend/node_modules/
-frontend/dist/
-frontend/.env
-
-# Backend - Java / IntelliJ / Maven / Gradle
-backend/.idea/
-backend/target/
-backend/out/
-backend/.gradle/
-*.iml
-
-# Sistema
-*.log
-.DS_Store
+>>>>>>> 52408e6b1211d7479854476212683522183f7e72
